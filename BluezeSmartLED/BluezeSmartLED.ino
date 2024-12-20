@@ -1,5 +1,3 @@
-
-
 /*
   Project by Blueze or Blues follow me on https://github.com/Blues24
   Project Tree should be like this
@@ -19,13 +17,13 @@
 #if defined(ESP32)
   #include <Wifi.h>
 #elif defined(ESP8266)
-  #include <ESP8266Wifi.h>
+  #include <ESP8266WiFi.h>
   #include <ESP8266WebServer.h>
 #endif
 #include <Firebase_ESP_Client.h>
 #include <FirebaseHelper.h> // Handtype custom library made by Blueze
 #include <DNSServer.h>
-#include <WifiManager.h>
+#include <WiFiManager.h>
 // Provide token generation info
 #include "addons/TokenHelper.h"
 // Provide Realtime Database payload
@@ -46,7 +44,7 @@ bool loginOK = false;
 // End of the configuration
 
 // WifiManager setup
-WifiServer server(80);
+WiFiServer server(80);
 // Variable to store header of HTTP request
 String Header;
 // End of the setup

@@ -9,8 +9,8 @@
 │   ├── Firebase_ESP8266_Client
 │   ├── FirebaseJson
 │   └── WiFiManager
-└── sketch_dec19a
-    └── sketch_dec19a.ino 
+└── BluezeSmartLED
+    └── BluezeSmartLED.ino 
 
 */
 #include <Arduino.h>
@@ -49,11 +49,11 @@ WiFiServer server(80);
 String Header;
 // End of the setup
 // Lamps pinout
-const int out1 = 5;
-const int out2 = 4;
-const int out3 = 0;
-const int out4 = 14;
-const int builtInLED = 2;
+const int out1 = 5; // D1
+const int out2 = 4; // D2
+const int out3 = 0; // D3
+const int out4 = 14; // D5
+const int builtInLED = 2; // Built in ESP8266 LED
 // Lamps status
 bool L1Status = false;
 bool L2Status = false;
